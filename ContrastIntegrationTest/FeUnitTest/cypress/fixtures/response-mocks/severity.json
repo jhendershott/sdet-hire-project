@@ -1,0 +1,41 @@
+{
+  "success" : true,
+  "messages" : [ "Vulnerability Breakdown By Severity loaded successfully" ],
+  "total_vulnerabilities" : 6,
+  "traces_breakdown" : [ {
+    "severity" : "CRITICAL",
+    "traces" : 1,
+    "details" : [ {
+      "status" : "Reported",
+      "traces" : 1
+    }] 
+  },{
+    "severity" : "HIGH",
+    "traces" : 3,
+    "details" : [ {
+      "status" : "Reported",
+      "traces" : 3
+    } ]
+  },{
+    "severity" : "MEDIUM",
+    "traces" : 3,
+    "details" : [ {
+      "status" : "Reported",
+      "traces" : 3
+    } ]
+  }, {
+    "severity" : "LOW",
+    "traces" : 1,
+    "details" : [ {
+      "status" : "Reported",
+      "traces" : 1
+    } ]
+}, {
+    "severity" : "NOTE",
+    "traces" : 2,
+    "details" : [ {
+      "status" : "Reported",
+      "traces" : 2
+    } ]
+  } ]
+}

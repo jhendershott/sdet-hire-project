@@ -1,3 +1,37 @@
+# Implementation
+
+BaseProject is a dotnet core test application utilizing RestSharp and Newtonsoft.Json for rest services. Inside of the project is a cypress FE testing this is to show a multi prong approach to testing
+
+Tests, in my opinion should take be enacted on as small of a dissection as possible.
+ * contrast apps outbound  write to data store
+ ----------
+ * request into data store
+ ----------
+ * front end display
+
+Due to time constraints I've opted for the following slices under test
+ ---------- dotnet xunit ----------------------
+ * contrast apps outbound  write to data store
+ * request into data store
+ -----------cypress with mocks ----------------
+ * front end display
+
+**Configuration information**
+Currently tests will fail due to lack of configuration can be done with 
+- configs as gitops
+- currently setup with env variables
+
+# Project structure
+* Flows
+	This directory is meant to break down actions by workflow. For Example: AttachFlows.cs will contain classes and methods used to test attack workflows. Such as an attack is caught by contrast and blocked and number of attack in the /attacks endpoint
+* IntegrationTests
+	Should be small tests, code should be exercised in reusable methods in Utils and Flows
+* Utils
+	Common Utilities such as Request which wraps RestSharp with a few methods that would make it easier to run the tests on. This would also include database query helpers and other, generally static reusable classes
+
+**FE Tests**
+[Cypress tests located here](ContrastIntegrationTest/FeUnitTest/README.md)
+
 # Overview
 
 The goal of this project is to create a conversation similar to one you would experience during a typical day working at Contrast Security as an engineer. You've made a pull request (PR) to a repository and are going through the code review process. It's the primary way we work from the infrastructure all the way through the front end code. 

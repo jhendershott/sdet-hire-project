@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://ce.contrastsecurity.com/Contrast",
+    "integrationFolder": "cypress/integration-specs",
+    "viewportWidth": 1600,
+    "viewportHeight": 1200,
+    "defaultCommandTimeout": 60000,
+    "videosFolder": "report/video",
+    "screenshotsFolder": "report/screenshots",
+    "video": false
+}
