@@ -10,10 +10,12 @@ Tests, in my opinion should take be enacted on as small of a dissection as possi
  * front end display
 
 Due to time constraints I've opted for the following slices under test
- ---------- dotnet xunit ----------------------
+ ---------- 
+ dotnet xunit 
  * contrast apps outbound  write to data store
  * request into data store
- -----------cypress with mocks ----------------
+ -----------
+ cypress with mocks
  * front end display
 
 **Configuration information**
